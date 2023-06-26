@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Contact Me</title>
+<link rel="stylesheet" type="text/css" href="MyWebpage.css">
+</head>
+<body>
+<h1>Contact Me</h1>
+
+<div class="contact-info">
+  <p><strong>Name:</strong> Andrew Roscoe</p>
+  <p><strong>WhatsApp:</strong> +447794055126</p>
+  <p><strong>Email:</strong> a.roscoe@me.com</p>
+</div>
+
+<h2>Send me a message</h2>
+
+<form id="contact-form" action="send_email.php" method="POST">
+  <div>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+  </div>
+  <div>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+  </div>
+  <div>
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" rows="5" required></textarea>
+  </div>
+  <div>
+    <input type="submit" value="Send">
+  </div>
+</form>
+
+<script src="MyWebpage.js"></script>
+</body>
+</html>
