@@ -2,14 +2,11 @@
 <html>
 <head>
 <title>My Portfolio</title>
-<link rel="stylesheet" type="text/css" href="MyWebpage.css">
+<link rel="stylesheet" type="text/css" href="style.css">
 <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
 </head>
 <body>
 <h1>Hi, my name is Andrew Roscoe</h1>
-<div class="paragraph-container">
-  <p>"This is my portfolio website. I am a software engineer with experience in Python, Java, and C++. I am also proficient in HTML, CSS, and JavaScript."</p>
-</div>
 <div class="menu-button">
   <button class="menu-button__button">Menu</button>
   <div class="menu-button__menu">
@@ -20,15 +17,20 @@
   </div>
 </div>
 
-<h2>Projects</h2>
+<h2>Navigate my menu to find:</h2>
 <div>
-  <ul id="project-list">
-    <li>A web application that helps users track their spending.</li>
-    <li>A game that was developed using Java and JavaScript.</li>
-    <li>A website that was designed using HTML and CSS.</li>
+  <ul id="menu-list">
+    <li>A Page showing my different Projects using multiple different coding languages</li>
+    <li>A Page showing all my certificates using multiple different coding languages</li>
+    <li>My Full CV</li>
+    <li>A Contact Me Page if you want to get in touch</li>
   </ul>
 </div>
-
+<footer>
+<div class="paragraph-container">
+  <p>"This is my portfolio website. I am a software engineer with experience in Python, Java, and SQLite. I am also proficient in HTML, CSS, and JavaScript."</p>
+</div>
+</footer>
 <script>
 document.addEventListener("DOMContentLoaded", function() {
   const menuButton = document.querySelector(".menu-button__button");

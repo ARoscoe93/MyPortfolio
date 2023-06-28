@@ -10,20 +10,24 @@ h1 {
   font-family: "Indie Flower", cursive;
   font-size: 48px;
   text-align: center;
+  color: #10ef39;
 }
 
 h2 {
   font-family: "Indie Flower", cursive;
   font-size: 38px;
   margin-left: 200px;
+  text-decoration: underline;
 }
 
-#projects-list {
+#menu-list {
   margin-left: 155px;
+  font-size: 22px;
 }
 
 .contact-info {
   margin-bottom: 20px;
+  color: #10ef39;
 }
 
 form {
@@ -70,7 +74,7 @@ input[type="submit"] {
 }
 
 .menu-button__button {
-  padding: 10px;
+  padding: 20px;
   background-color: #10ef39;
   color: #ffffff;
   border: none;
@@ -95,13 +99,18 @@ input[type="submit"] {
 }
 
 .paragraph-container {
-  position: absolute;
-  top: 30%;
-  right: 20px;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
   transform: translateY(-50%);
   width: 250px;
   font-family: "Indie Flower", cursive;
   font-size: 26px;
+
+  @media screen and (max-width: 600px) {
+    width: 100%;
+    margin-top: 20px;
+  }
 }
 
 /* Media queries for responsive design */
@@ -117,8 +126,8 @@ input[type="submit"] {
     margin-left: 0;
   }
 
-  #projects-list {
-    margin-left: 0;
+  #menu-list {
+    margin-left: 10px;
   }
 
   .paragraph-container {
