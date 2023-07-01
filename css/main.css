@@ -788,7 +788,7 @@
 		  width: 15vh;
 		  height: 100vh;
 		  overflow-y: scroll;
-		  min-width: 200px; /* Set a minimum width for the nav */
+		  min-width: 100px; /* Set a minimum width for the nav */
 		}
 	
 	nav .logo {
