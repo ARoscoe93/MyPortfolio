@@ -806,10 +806,7 @@
 		margin-bottom: 20px;
 	}
 	
-	.footer .content p a {
-		color: #aaa;
-		text-decoration: none;
-	}
+	
 	
   }
   
@@ -883,6 +880,12 @@
 	  .fifth-content #contact {
 		padding: 15px;
 	  }
+
+	  .footer .content p a {
+		color: #aaa;
+		text-decoration: none;
+		display: none;
+	}
 	  
 	  @media (max-width: 450px) {
 		nav ul {
