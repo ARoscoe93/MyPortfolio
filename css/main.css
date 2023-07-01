@@ -493,6 +493,24 @@
 	  margin-right: 15px;
   }
   
+ .third-content .third-section .left-content {
+	  margin-right: 15px;
+	  margin-top: 12px;
+  }
+
+  .third-content .third-section  .right-image{
+	  margin-left: 15px;
+  }
+
+ .third-content .fourth-section .right-content{
+	  margin-left: 15px;
+	  margin-top: 12px;
+ }
+
+  .third-content .fourth-section .left-image{
+	margin-right: 15px;
+  }
+
   .third-content h2 {
 	  font-size: 24px;
 	  text-transform: uppercase;
