@@ -704,6 +704,11 @@
 	  background-color: #fff;
   }
   
+  .extra-contact p {
+	color: #f4f4f4;
+	font-size: medium;
+  }
+
   .footer .content {
 	  left: 30%;
 	  width: 70%;
