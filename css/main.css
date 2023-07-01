@@ -843,9 +843,6 @@
 	  padding: 15px 15px 15px 15px;
 	}
 	
-	footer {
-		display: none;
-	  }
 
 	@media (max-width: 450px) {
 	  nav ul {
