@@ -784,76 +784,83 @@
   }
   
   @media (max-width: 749px) {
-  
-	  nav {
+		nav {
 		  width: 15vh;
-	  }
-  
-	  nav .logo {
-		  display: none;
-	  }
-  
-	  nav .mini-logo {
-		  margin-top: 60px;
-		  display: block;
-	  }
-  
+		  height: 100vh;
+		  overflow-y: scroll;
+		  min-width: 200px; /* Set a minimum width for the nav */
+		}
+	
+	nav .logo {
+	  display: none;
+	}
+	
+	nav .mini-logo {
+	  margin-top: 60px;
+	  display: block;
+	}
+	
+	nav ul {
+	  text-align: center;
+	  margin-left: 0px;
+	}
+	
+	nav ul li em {
+	  display: none;
+	}
+	
+	nav ul li i {
+	  width: 20px;
+	  height: 20px;
+	  line-height: 20px;
+	  text-align: center;
+	}
+	
+	.first-content {
+	  padding: 30px 5px;
+	}
+	
+	.first-content .main-btn {
+	  display: inline-block;
+	  margin-right: 0px;
+	  margin-bottom: 15px;
+	}
+	
+	.second-content .left-content {
+	  padding: 30px;
+	  text-align: left;
+	}
+	
+	.fourth-content .item .hover-effect h2 {
+	  font-size: 15px;
+	}
+	
+	.fifth-content #map {
+	  padding: 15px 15px 15px 15px;
+	}
+	
+	.fifth-content #contact {
+	  padding: 15px 15px 15px 15px;
+	}
+	
+	@media (max-width: 450px) {
 	  nav ul {
-		  text-align: center;
-		  margin-left: 0px;
-	  }
-  
-  
-	  nav ul li em {
-		  display: none;
-	  }
-  
-	  nav ul li i {
-		  width: 20px;
-		  height: 20px;
-		  line-height: 20px;
-		  text-align: center;
-	  }
-  
-	  .first-content {
-		  padding: 30px 5px;
-	  }
-  
-	  .first-content .main-btn {
-		  display: inline-block;
-		  margin-right: 0px;
-		  margin-bottom: 15px;
-	  }
-  
-	  .second-content .left-content {
-		  padding: 30px;
-		  text-align: left;
-	  }
-  
-	  .fourth-content .item .hover-effect h2 {
-		  font-size: 15px;
-	  }
-  
-  
-	  .fifth-content #map {
-		  padding: 15px 15px 15px 15px;
-	  }
-  
-	  .fifth-content #contact {
-		  padding: 15px 15px 15px 15px;
-	  }
-  
-  }
-  
-  @media(max-width: 450px) {
-	  nav ul {
-		  margin-top: 30px;
+		margin-top: 30px;
 	  }
 	  nav ul li {
-		  margin: 10px 0px;
+		margin: 10px 0px;
 	  }
 	  nav a {
-		  padding: 15px 20px;
+		padding: 15px 20px;
 	  }
+	}
+	
+	/* Add this media query at the end of your CSS code */
+	@media (max-width: 767px) {
+	  /* Hide the footer on screens with a maximum width of 767 pixels */
+	  footer {
+		display: none;
+	  }
+	}
   }
   
