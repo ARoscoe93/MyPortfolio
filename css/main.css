@@ -798,15 +798,27 @@
 	  .fifth-content #contact {
 		  padding: 30px 30px 30px 30px;
 	  }
-  
+	  
+	  .footer .content p {
+		text-align: center;
+		font-size: 13px;
+		color: #fff;
+		margin-bottom: 20px;
+	}
+	
+	.footer .content p a {
+		color: #aaa;
+		text-decoration: none;
+	}
+	
   }
   
   @media (max-width: 749px) {
 	nav {
-		width: 15vh; 
-		height: auto; /* Remove fixed height */
+		width: 15vh;
+		height: auto;
 		overflow-y: scroll;
-		min-width: 75px; /* Set a minimum width for the nav */
+		min-width: 75px;
 	  }
 	  
 	  nav .logo {
@@ -814,8 +826,9 @@
 	  }
 	  
 	  nav .mini-logo {
-		margin-top: 60px;
+		margin-top: 5px;
 		display: block;
+		text-align: center;
 	  }
 	  
 	  nav ul {
@@ -835,6 +848,10 @@
 		text-align: center;
 	  }
 	  
+	  nav ul li:first-child {
+		margin-top: 60px; /* Add margin to the first list item */
+	  }
+	  
 	  .first-content {
 		padding: 30px 5px;
 	  }
@@ -850,11 +867,11 @@
 		text-align: left;
 	  }
 	  
-	  .second-content .right-content{
+	  .second-content .right-content {
 		padding: 30px;
 		text-align: left;
 	  }
-
+	  
 	  .fourth-content .item .hover-effect h2 {
 		font-size: 15px;
 	  }
@@ -878,4 +895,4 @@
 		  padding: 15px 20px;
 		}
 	  }
-  }	  
+	}	  
