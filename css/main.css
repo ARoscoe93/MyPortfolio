@@ -826,7 +826,7 @@
 	  margin-bottom: 15px;
 	}
 	
-	.second-content .left-content {
+	.second-content .left-content .right-content{
 	  padding: 30px;
 	  text-align: left;
 	}
