@@ -773,6 +773,24 @@
 		  margin-right: 0px;
 	  }
   
+	  .third-content .third-section .left-content {
+		  margin-right: 0px;
+		  margin-bottom: 30px;
+	  }
+
+	  .third-content .third-section .right-image {
+		margin-left: 0px;
+	  }
+
+	  .third-content .fourth-section .right-content {
+		margin-left: 0px;
+		margin-top: 30px;
+	  }
+
+	  .third-content .fourth-section .left-image {
+		margin-right: 0px;
+	  }
+
 	  .fifth-content #map {
 		  padding: 30px 30px 30px 30px;
 	  }
@@ -827,11 +845,16 @@
 		margin-bottom: 15px;
 	  }
 	  
-	  .second-content .left-content .right-content {
+	  .second-content .left-content {
 		padding: 30px;
 		text-align: left;
 	  }
 	  
+	  .second-content .right-content{
+		padding: 30px;
+		text-align: left;
+	  }
+
 	  .fourth-content .item .hover-effect h2 {
 		font-size: 15px;
 	  }
