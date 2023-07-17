@@ -493,23 +493,44 @@
 	  margin-right: 15px;
   }
   
- .third-content .third-section .left-content {
+  .third-content .third-section {
+	margin-top: 30px;
+}
+  .third-content .third-section .left-content {
 	  margin-right: 15px;
 	  margin-top: 12px;
   }
 
-  .third-content .third-section  .right-image{
+  .third-content .third-section  .right-image {
 	  margin-left: 15px;
   }
 
- .third-content .fourth-section .right-content{
+  .third-content .fourth-section {
+	margin-top: 30px;
+}
+  .third-content .fourth-section .right-content {
 	  margin-left: 15px;
 	  margin-top: 12px;
  }
 
-  .third-content .fourth-section .left-image{
-	margin-right: 15px;
+  .third-content .fourth-section .left-image {
+	  margin-right: 15px;
   }
+
+
+  .third-content .fifth-section {
+	margin-top: 30px;
+}
+
+  .third-content .fifth-section .left-content {
+	  margin-right: 15px;
+	  margin-top: 12px;
+}
+
+  .third-content .fifth-section .right-image {
+	  margin-left: 15px;
+}
+
 
   .third-content h2 {
 	  font-size: 24px;
@@ -802,6 +823,16 @@
 	  .third-content .fourth-section .left-image {
 		margin-right: 0px;
 	  }
+
+
+	.third-content .fifth-section .left-content {
+		margin-right: 0px;
+		margin-top: 30px;
+	}
+
+	.third-content .fifth-section .right-image {
+		margin-left: 0px;
+	}
 
 	  .fifth-content #map {
 		  padding: 30px 30px 30px 30px;
