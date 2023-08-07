@@ -853,29 +853,97 @@
 	
   }
   
-  @media (orientation: landscape) {
-	.slides {
-	  width: 100%;
-	  height: auto;
-	}
-  }
   
   @media (max-width: 768px) and (orientation: landscape) {
-	.slides {
-	  width: 100%;
-	  height: auto;
+	nav {
+		width: 15vh;
+		height: auto;
+		overflow-y: scroll;
+		min-width: 75px;
+	  }
+	  
+	  nav .logo {
+		display: none;
+	  }
+	  
+	  nav .mini-logo {
+		margin-top: 10px;
+		display: block;
+		text-align: center;
+	  }
+	  
+	  nav ul {
+		text-align: center;
+		margin: 0;
+		padding: 0;
+	  }
+	  
+	  nav ul li em {
+		display: none;
+	  }
+	  
+	  nav ul li i {
+		width: 20px;
+		height: 20px;
+		line-height: 20px;
+		text-align: center;
+	  }
+	  
+	  nav ul li:first-child {
+		margin-top: 60px; /* Add margin to the first list item */
+	  }
+	  
+	  .first-content {
+		padding: 30px 5px;
+	  }
+	  
+	  .first-content .main-btn {
+		display: inline-block;
+		margin-right: 0;
+		margin-bottom: 15px;
+	  }
+	  
+	  .second-content .left-content {
+		padding: 30px;
+		text-align: left;
+	  }
+	  
+	  .second-content .right-content {
+		padding: 30px;
+		text-align: left;
+	  }
+	  
+	  .fourth-content .item .hover-effect h2 {
+		font-size: 15px;
+	  }
+	  
+	  .fifth-content #map {
+		padding: 15px;
+	  }
+	  
+	  .fifth-content #contact {
+		padding: 15px;
+	  }
+
+	  .footer .content p {
+		color: #aaa;
+		text-decoration: none;
+		display: none;
+		margin-bottom: 10px;
 	}
-  
-	.slide {
-	  float: none;
-	  width: 100%;
-	  height: auto;
-	}
-  
-	.content {
-	  height: auto;
-	}
-  }
+	  
+	  @media (max-width: 450px) {
+		nav ul {
+		  margin-top: 30px;
+		}
+		nav ul li {
+		  margin: 10px 0;
+		}
+		nav a {
+		  padding: 15px 20px;
+		}
+	  }
+	}	  
   
   
 
