@@ -83,5 +83,15 @@ jQuery(document).ready(function($) {
             }
         });
 
+        document.addEventListener("DOMContentLoaded", function () {
+            const downloadButton = document.getElementById("downloadCvButton");
+        
+            // Replace "path/to/your/cv.pdf" with the actual path to your CV file
+            const cvFilePath = "/Users/roscoe/Documents/GitHub/MyPortfolio/MyCV.docx";
+        
+            downloadButton.addEventListener("click", function () {
+                window.location.href = cvFilePath;
+            });
+        });
 
 });
