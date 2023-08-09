@@ -23,7 +23,7 @@
 <body>
     
     <div class="download-cv-button" id="downloadCvButton">
-        <a href="/Users/roscoe/Documents/GitHub/MyPortfolio/MyCV.pdf" download>Download CV</a>
+        <a href="MyCV.pdf" download>Download CV</a>
     </div>
     
     <div class="sequence">
@@ -42,7 +42,7 @@
           <div class="mini-logo">
               <img src="img/mini_logo.png" alt="">
           </div>
-          <ul style="position: static"></ulstyle>>
+          <ul style="position: static">
             <li><a href="#1"><i class="fa fa-home"></i> <em>Home</em></a></li>
             <li><a href="#2"><i class="fa fa-user"></i> <em>About Me</em></a></li>
             <li><a href="#3"><i class="fa fa-pencil"></i> <em>Certificates</em></a></li>
@@ -448,43 +448,63 @@
     <script src="js/main.js"></script>
 
     <script type="text/javascript">
-    $(document).ready(function() {
 
         
 
-        // navigation click actions 
-        $('.scroll-link').on('click', function(event){
-            event.preventDefault();
-            var sectionID = $(this).attr("data-id");
-            scrollToID('#' + sectionID, 750);
-        });
-        // scroll to top action
-        $('.scroll-top').on('click', function(event) {
-            event.preventDefault();
-            $('html, body').animate({scrollTop:0}, 'slow');         
-        });
-        // mobile nav toggle
-        $('#nav-toggle').on('click', function (event) {
-            event.preventDefault();
-            $('#main-nav').toggleClass("open");
+        $(document).ready(function() {
+    // navigation click actions
+    $('.scroll-link').on('click', function(event){
+        event.preventDefault();
+        var sectionID = $(this).attr("data-id");
+        scrollToID('#' + sectionID, 750);
+    });
+
+    // handle highlighting active link
+    $(window).on('scroll', function() {
+        var scrollPos = $(window).scrollTop();
+        $('.scroll-link').each(function() {
+            var currLink = $(this);
+            var refElement = $(currLink.attr("data-id"));
+            if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+                $('.scroll-link').removeClass("active");
+                currLink.addClass("active");
+            } else {
+                currLink.removeClass("active");
+            }
         });
     });
-    // scroll function
-    function scrollToID(id, speed){
-        var offSet = 0;
-        var targetOffset = $(id).offset().top - offSet;
-        var mainNav = $('#main-nav');
-        $('html,body').animate({scrollTop:targetOffset}, speed);
-        if (mainNav.hasClass("open")) {
-            mainNav.css("height", "1px").removeClass("in").addClass("collapse");
-            mainNav.removeClass("open");
-        }
+
+    // scroll to top action
+    $('.scroll-top').on('click', function(event) {
+        event.preventDefault();
+        $('html, body').animate({scrollTop:0}, 'slow');         
+    });
+
+    // mobile nav toggle
+    $('#nav-toggle').on('click', function (event) {
+        event.preventDefault();
+        $('#main-nav').toggleClass("open");
+    });
+});
+
+// scroll function
+function scrollToID(id, speed){
+    var offSet = 0;
+    var targetOffset = $(id).offset().top - offSet;
+    var mainNav = $('#main-nav');
+    $('html,body').animate({scrollTop:targetOffset}, speed);
+    if (mainNav.hasClass("open")) {
+        mainNav.css("height", "1px").removeClass("in").addClass("collapse");
+        mainNav.removeClass("open");
     }
-    if (typeof console === "undefined") {
-        console = {
-            log: function() { }
-        };
-    }
+}
+
+if (typeof console === "undefined") {
+    console = {
+        log: function() { }
+    };
+}
+
     </script>
 </body>
 </html>
