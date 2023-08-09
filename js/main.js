@@ -87,7 +87,7 @@ jQuery(document).ready(function($) {
             const downloadButton = document.getElementById("downloadCvButton");
         
             // Replace "path/to/your/cv.pdf" with the actual path to your CV file
-            const cvFilePath = "/Users/roscoe/Documents/GitHub/MyPortfolio/MyCV.docx";
+            const cvFilePath = "/Users/roscoe/Documents/GitHub/MyPortfolio/MyCV.pdf";
         
             downloadButton.addEventListener("click", function () {
                 window.location.href = cvFilePath;
