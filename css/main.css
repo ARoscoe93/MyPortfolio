@@ -532,6 +532,19 @@
 	  margin-left: 15px;
 }
 
+.third-content .sixth-section {
+	margin-top: 30px;
+}
+
+  .third-content .sixth-section .right-content {
+	  margin-left: 15px;
+	  margin-top: 12px;
+}
+
+  .third-content .sixth-section .left-image {
+	  margin-right: 15px;
+}
+
 
   .third-content h2 {
 	  font-size: 24px;
@@ -835,6 +848,16 @@
 		margin-left: 0px;
 	}
 
+	.third-content .sixth-section .right-content {
+		margin-left: 0px;
+		margin-top: 30px;
+	  }
+
+	  .third-content .sixth-section .left-image {
+		margin-right: 0px;
+	  }
+
+
 	  .fifth-content #map {
 		  padding: 30px 30px 30px 30px;
 	  }
@@ -883,7 +906,9 @@
 	  .third-content .fourth-section .right-content,
 	  .third-content .fourth-section .left-image,
 	  .third-content .fifth-section .left-content,
-	  .third-content .fifth-section .right-image {
+	  .third-content .fifth-section .right-image,
+	  .third-content .sixth-section .right-content,
+	  .third-content .sixth-section .left-image {
 		margin: 0;
 		padding: 15px;
 	  }
