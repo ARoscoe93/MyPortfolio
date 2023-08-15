@@ -1045,8 +1045,8 @@
 
 	.download-cv-button {
 		position: fixed;
-		top: 20px;
-		left: 10px;
+		top: 17px;
+		left: 1px;
 		z-index: 1000;
 	}
 	
